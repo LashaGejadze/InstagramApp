@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class InstaCam: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
 
     let picker = UIImagePickerController()
@@ -28,8 +29,9 @@ class InstaCam: UIViewController,UIImagePickerControllerDelegate,UINavigationCon
             picker.cameraCaptureMode = .photo
             picker.modalPresentationStyle = .fullScreen
             present(picker,animated: true,completion: nil)
-        } else {
+            } else {
             noCamera()
+        
         }
     }
     func noCamera(){
